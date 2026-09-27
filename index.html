@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Happy Birthday</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="frame">
+  <div class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab active" data-tab="0" onclick="goTo(0)">Hello</button>
+    <button class="tab" data-tab="1" onclick="goTo(1)">Note</button>
+    <button class="tab" data-tab="2" onclick="goTo(2)">Letter</button>
+  </div>
+
+  <div class="viewport">
+
+    <!-- VIEW 1 -->
+    <section class="view active" id="view-0" aria-label="Hello">
+      <div class="hero-photo">
+        <img src="her_photo.jpg" alt="Her Photo">
+        <div class="hero-text">
+          <div class="eyebrow-date">October 26, 2006</div>
+          <div class="hero-headline">Happy Birthday</div>
+          <div class="hero-name">Jamira Guinal Mostapha <span class="nickname">'Jam'</span></div>
+        </div>
+      </div>
+      <p class="hero-caption">A small greeting from a fellow MSU student wishing you an easy, happy day.</p>
+      <div class="cta-row">
+        <button class="btn" onclick="goTo(1)">Continue</button>
+      </div>
+    </section>
+
+    <!-- VIEW 2 -->
+    <section class="view" id="view-1" aria-label="Note">
+      <div class="note-title">Happy Birthday!</div>
+      <div class="zigzag">
+        <div class="zrow">
+          <div class="zphoto"><img src="flower_photo1.jpg" alt="Flowers"></div>
+          <p class="ztext">Hope this birthday reminds you how appreciated you are, even on the busy days when it doesn't always feel that way. You put so much care into everything you do, and today it's your turn to be taken care of.</p>
+        </div>
+        <div class="zrow reverse">
+          <div class="zphoto"><img src="flower_photo2.jpg" alt="Flowers"></div>
+          <p class="ztext">You've got a long, meaningful journey ahead of you, and I know it isn't always easy. I hope today gives you a real breather a moment to just enjoy being celebrated instead of being busy.</p>
+        </div>
+        <div class="zrow">
+          <div class="zphoto"><img src="flower_photo3.jpg" alt="Flowers"></div>
+          <p class="ztext">From one MSU student to another here's to a great year ahead. Wishing you a year that's kind to you, the way you're kind to others. Whatever comes next, I hope it brings you closer to everything you're working so hard for.</p>
+        </div>
+      </div>
+      <span class="note-sign">— A course-mate</span>
+      <div class="cta-row split">
+        <button class="btn outline" onclick="goTo(0)">Back</button>
+        <button class="btn" onclick="goTo(2)">Continue</button>
+      </div>
+    </section>
+
+    <!-- VIEW 3 -->
+    <section class="view" id="view-2" aria-label="A Letter For You">
+      <div class="letter-head">
+        <div class="icon-row">&#127881; &#127802; &#127881;</div>
+        <h2>A Letter For You</h2>
+      </div>
+      <div class="letter">
+        <p>Dear Jam,</p>
+        <p>I still remember getting to meet you, and I'm genuinely glad our paths crossed at MSU. Even if things didn't turn out the way I once hoped, I'm grateful to be one of your friends that alone means a lot to me.</p>
+        <p>Nursing school isn't easy, and I know the duties, the exams, and the late nights can wear anyone down. So on your birthday, more than anything, I hope you take care of yourself, your health, your rest, your peace of mind. You can't pour from an empty cup, and you deserve to be taken care of too.</p>
+        <p>I hope this year brings you closer to your dreams the career you're working so hard for, and everything beyond it. Whatever path you take, I believe you'll get there.</p>
+        <p>And wherever life takes you after this, I hope you always remember you have friends who support you, root for you, and care about you, wherever you go.</p>
+        <p>Happy birthday, Jam. Here's to you.</p>
+        <span class="letter-sign">— From someone who's glad to know you</span>
+      </div>
+      <div class="cta-row center" style="margin-top:24px;">
+        <button class="btn" onclick="replay()">Replay</button>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div id="burstLayer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
